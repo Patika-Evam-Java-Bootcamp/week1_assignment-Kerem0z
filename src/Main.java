@@ -15,15 +15,15 @@ public class Main {
         System.out.println("Please enter the fourth word");
         String str4 =sc.nextLine();
         System.out.println("Please enter the fifth word");
-        String str5 =sc.nextLine();
-        String [] wordPool = new String[5];
+        String str5 =sc.nextLine();                         // kelime girdilerini aldık
+        String [] wordPool = new String[5];                 // 5 üyelik bir array oluşturduk
         wordPool[0]=str1;
         wordPool[1]=str2;
         wordPool[2]=str3;
         wordPool[3]=str4;
-        wordPool[4]=str5;
+        wordPool[4]=str5;                                   // kelimeler array içerisine atandı
         for(int i=0;i< wordPool.length;i++){
-            if(Objects.equals(wordPool[i], wantedString)){
+            if(Objects.equals(wordPool[i], wantedString)){  // array içerisinde aradığımız kelimeyi döndürüyoruz
                 System.out.println("Tanımlı value yu içeren String deger:" + wordPool[i]);
             }
         }
